@@ -6,24 +6,19 @@ const wrongAnswer = 'Доступ запрещен!';
 const rightAnswer = 'Добро пожаловать!';
 
 let passwordAnswer;
+let loginAnswer;
 
-let loginAnswer = prompt('Введите логин:');
+loginAnswer = prompt('Введите логин:');
 
 if (loginAnswer == null) {
   alert(cancelAnswer);
 } else if (loginAnswer !== ADMIN_LOGIN) {
   alert(wrongAnswer);
 } else {
-  passwordAnswer = prompt ('Введите пароль:');
-
+  passwordAnswer = prompt('Введите пароль:');
   if (passwordAnswer == null) {
     alert(cancelAnswer);
   } else if (passwordAnswer !== ADMIN_PASSWORD) {
     alert(wrongAnswer);
   } else alert(rightAnswer);
-} 
-
-
-
-
-
+}
