@@ -10,13 +10,13 @@ let loginAnswer;
 
 loginAnswer = prompt('Введите логин:');
 
-if (loginAnswer == null) {
+if (loginAnswer === null) {
   alert(cancelAnswer);
 } else if (loginAnswer !== ADMIN_LOGIN) {
   alert(wrongAnswer);
 } else {
   passwordAnswer = prompt('Введите пароль:');
-  if (passwordAnswer == null) {
+  if (passwordAnswer === null) {
     alert(cancelAnswer);
   } else if (passwordAnswer !== ADMIN_PASSWORD) {
     alert(wrongAnswer);
