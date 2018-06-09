@@ -13,13 +13,17 @@ if (loginAnswer == null) {
   alert(cancelAnswer);
 } else if (loginAnswer !== ADMIN_LOGIN) {
   alert(wrongAnswer);
-} else passwordAnswer = prompt ('Введите пароль:');
+} else {
+  passwordAnswer = prompt ('Введите пароль:');
 
-if (passwordAnswer == null) {
-  alert(cancelAnswer);
-} else if (passwordAnswer !== ADMIN_PASSWORD) {
-  alert(wrongAnswer);
-} else alert(rightAnswer);
+  if (passwordAnswer == null) {
+    alert(cancelAnswer);
+  } else if (passwordAnswer !== ADMIN_PASSWORD) {
+    alert(wrongAnswer);
+  } else alert(rightAnswer);
+} 
+
+
 
 
 
